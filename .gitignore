@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/bindbc-mecab
+bindbc-mecab.so
+bindbc-mecab.dylib
+bindbc-mecab.dll
+bindbc-mecab.a
+bindbc-mecab.lib
+bindbc-mecab-test-*
+*.exe
+*.o
+*.obj
+*.lst

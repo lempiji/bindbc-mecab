@@ -1,0 +1,24 @@
+name "bindbc-mecab"
+description "A binding for MeCab"
+authors "lempiji"
+license "MIT"
+dependency "bindbc-loader" version="~>0.3.0"
+
+configuration "BindMeCab_Dynamic" {
+    copyFiles "lib/x86_64/libmecab.dll" platform="x86_64"
+    copyFiles "lib/x86_mscoff/libmecab.dll" platform="x86_mscoff"
+    versions "BindMeCab_Dynamic"
+}
+
+configuration "BindMeCab_Static" {
+    libs "libmecab"
+    versions "BindMeCab_Static"
+}
+
+configuration "BindMeCab_Dynamic_NOLIB" {
+    versions "BindMeCab_Dynamic"
+}
+
+configuration "BindMeCab_Static_NOLIB" {
+    versions "BindMeCab_Static"
+}
